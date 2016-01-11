@@ -10,8 +10,8 @@ calculate_ci <- function(stuff) {
   return(ci)
 }
 
-old_times = read.table('old_query.dat', header = TRUE)
-new_times = read.table('new_query.dat', header = TRUE)
+old_times = read.table('old.dat', header = TRUE)
+new_times = read.table('new.dat', header = TRUE)
 
 old_times = old_times[,1]*1000
 new_times = new_times[,1]*1000
